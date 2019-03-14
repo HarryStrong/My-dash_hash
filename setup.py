@@ -1,6 +1,6 @@
 from distutils.core import setup, Extension
 
-My-dash_hash_module = Extension('My-dash_hash',
+dash_hash_module = Extension('dash_hash',
                                  sources = ['dashmodule.c',
                                             'dash.c',
                                             'sha3/blake.c',
@@ -16,7 +16,7 @@ My-dash_hash_module = Extension('My-dash_hash',
                                             'sha3/shavite.c'],
                                include_dirs=['.', './sha3'])
 
-setup (name = 'My-dash_hash',
+setup (name = 'dash_hash',
        version = '1.3.1',
        description = 'Binding for Dash X11 proof of work hashing.',
-       ext_modules = [My-dash_hash_module])
+       ext_modules = [dash_hash_module])
